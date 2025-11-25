@@ -1,0 +1,10 @@
+Respuestas de la practica 4
+1. Que diferencia observaron entre los valores iniciales con malloc y calloc?
+malloc reserva memoria pero deja valores basura en cambio calloc reserva memoria e inicializa todo en cero
+
+2. Que sucede si en realloc piden un tamaño más grande que el original? ¿y más pequeño?
+Si se pide un tamaño mayor se conserva los valores anteriores y agrega espacio nuevo sin inicializar pero
+si se pide un tamaño menor, recorta el arreglo y se pierden los valores sobrantes
+
+3. Que pasa si olvidan llamar a free?
+se produce una fuga de memoria por lo que el programa desperdicia memoria y puede fallar en ejecuciones largas
