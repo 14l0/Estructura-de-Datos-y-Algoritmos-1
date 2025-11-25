@@ -1,0 +1,20 @@
+Preguntas A: 
+1. Por que es más fácil eliminar un nodo intermedio en una lista doblemente ligada que en una lista simple?
+porque cada nodo tiene dos punteros en el cual uno apunta al anterior y otro al siguiente entonces para eliminar
+el nodo solo ajustas los punteros y ya
+
+2. Que sucede si se olvida actualizar alguno de los punteros anterior o siguiente?
+La lista se rompe ya que queda un nodo inaccesible, y al recorrerla se pueden perder datos
+
+3. En que escenarios practicos se usa una lista doblemente ligada?
+En navegadores web, reproductores multimedia o apps que tengan editores de texto
+
+Preguntas B:
+1. Que diferencia hay entre una lista doblemente ligada y una circular doblemente ligada?
+En la circular el primer nodo apunta al ultimo y el ultimo al primero, asi nunca hay punteros "NULL"
+
+2. Que errores pueden causar ciclos infinitos al recorrer una lista circular?
+Si no se pone una condicion para detener el recorrido 
+
+3. Que tipo de aplicaciones reales usan este tipo de listas (por ejemplo, reproductores multimedia, navegación en historial, juegos)?
+Spotify, Chrome, Microsoft word, VS Code, Linux, Monopoly, UNO, etc
