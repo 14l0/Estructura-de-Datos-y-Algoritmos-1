@@ -1,0 +1,29 @@
+Parte 1: 
+
+primero pues vamos a dividir el arreglo en dos mitades una q sea para el lado izquierdo y otra para el lado derecho
+despues volvemos a dividir en cada mitad hasta q quede solo un elemento y una vez q tenemos el maximo de la parte 
+derecha y el de la parte izquierda se comparan y se regresa el mayor de esos elementos
+
+Asi quedaria el pseudocodigo:
+
+funcion maximo(arreglo, inicio, fin):
+    si inicio == fin:
+        devolver arreglo[inicio] //este es nuestro caso base 
+    mitad = (inicio + fin) / 2
+    max_izquierdo = maximo(arreglo, inicio, mitad)
+    max_derecho = maximo(arreglo, mitad+1, fin)
+    si max_izquierdo > max_derecho:
+        devolver max_izquierdo
+    sino:
+        devolver max_derecho
+
+en el caso base pues el subarreglo tiene solo un elemento y por eso puse de q "incio == fin;" ya que no hay 
+nada q dividir porque el subarreglo es de un tamaño y ese valor es el maximo ya q no hay nada con q pueda 
+compararlo 
+
+punto extra: 
+
+para el algoritmo recursivo de maximo tiene complejidad O(n) porque pues al final se comparan 
+todos los elementos de una vez y aunque se use recursion y se divida el arreglo mitad y mitad pues 
+el numero de esas comparaciones va a ser igual al tamaño del arreglo 
+

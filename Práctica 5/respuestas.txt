@@ -1,0 +1,9 @@
+1. Que diferencias notaron entre el orden de salida de la pila y de la cola?
+La Pila usa la estructura LIFO el cual es que el ultimo elemento en entrar es el primero en salir mientras que,
+la Cola usa la estructura FIFO, el primer elemento en entrar es el primero en salir
+
+2. Que sucede si intentan hacer pop en una pila vacía o dequeue en una cola vacía?
+No habra elementos que extraer y el programa muestra un mensaje de error
+
+3. Que sucede si intentan insertar más elementos que la capacidad máxima?
+Se produce desborda el programa y muestra que la pila/cola está llena
